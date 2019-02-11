@@ -21,7 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "electron": "electron .",
+    "electron-prod": "electron .",
+    "preelectron-prod": "yarn build",
     "electron-dev": "concurrently 'BROWSER=none yarn start' 'wait-on http://localhost:3000/ && NODE_ENV=development electron .'",
     "electron-pack": "electron-builder",
     "preelectron-pack": "yarn build"
